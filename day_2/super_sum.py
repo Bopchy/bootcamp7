@@ -14,7 +14,7 @@ def super_sum(A):
 			
 		else:
 			numbers += num * 2 
-			
+
 	return numbers
 	
 print super_sum ([1,2,3,4,5])
