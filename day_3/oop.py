@@ -1,23 +1,9 @@
-class Person:
-	# people_count is a class variable  
-	people_count = 0 # counts the number of people objects being made 
+#  person = module_name, Person = class_name
+from person import Person 
+from kenyan import Kenyan
 
-	# __init__ always called the moment class is formed, when you want to do something the moment class is created  
-	def __init__ (self, name, age): # works the same way as a constructor
-		# these are instance variables 
-		self.name = name
-		self.age = age # to access instance variable use self 
-		Person.people_count += 1 # assigning class variable 
-		# to access class variable use class_name.instance_name 
 
-	def say_hello (self):
-		return "Hello, I am {} and I'm {} y/o".format(self.name, self.age)
 
-	def __repr__(self): # internal function meaning represent 
-		return "<object: {}, {}>".format(self.name, self.age)
-
-# end of class		  
- 
 p = Person ('Joe', 23) # instance of class Person
 p2 = Person ('George', 14)
 p3 = Person ("Honey", 67)
@@ -42,3 +28,13 @@ for person in b:
 	print person.say_hello()
 
 
+
+
+k = Kenyan('Jane', 34)
+k.probe (True)
+
+print "Is {} corrupt? {}".format(k.name, k.is_corrupt())
+print k.say_hello ()
+print k.corrupt ###################?????????
+
+ 
