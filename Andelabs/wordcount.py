@@ -1,1 +1,3 @@
-def word_occurrence():
+def word_occurrence(s):
+	if type (s) == dict
+		

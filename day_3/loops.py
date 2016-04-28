@@ -49,23 +49,23 @@ def all_add(D):
 		x:5, y:6, z: 7
 
 	'''
-	
+	if d
 	for x in D:
 		
 		####### find a way to increment x through the loop 
 
-			if len(x) == 3:
+		if len(x) == 3:
+			for x,y,z in x:
 				return "x: {}, y: {}, z: {}".format(*x)
-
-			elif len(x) == 2:
+		elif len(x) == 2:
+			for x,y in x:
 				return "x: {}, y: {}".format(*x)
-
-			elif len(x) == 1:
+		elif len(x) == 1:
+			for x in x:
 				return "x: {}".format(*x)
-
-			else:
-					return "There's nothing to output"
-
+		else: 
+			m = "There's nothing to output"
+	return m
 
 print all_add([(10,20,30), (11, 40), (60), (5, 6, 7)])
 
