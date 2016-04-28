@@ -1,6 +1,7 @@
 a = [10, 40, 6, 9, -5, 4, 3, 7, 8,'']
 
-'''for i in a:
+"""
+for i in a:
 	print i  
 
 # print in reverse 
@@ -14,10 +15,15 @@ while i > 0:
 
 for num in range (len (a) - 1, -1): #the second -1 is because you want the length to go up to zero
 	print a[i]
+
+"""
+
 '''
 b = [(2,4), (5,10), (6,20), (50,50)]
 
 '''
+
+"""
 Make b appear as below
 x:2, y:4
 x:5, y:10
@@ -30,9 +36,9 @@ c = [(2,4,1), (5,10,2), (6,20,3), (50,50,4)]
 for j in c:
 	print "x:{}, y:{}, z:{}".format(*j) 
 
+"""
 
-
-def all_add (a, *args):
+def all_add(D):
 
 	'''
 		Takes in a list with variably sized tuples 
@@ -43,10 +49,28 @@ def all_add (a, *args):
 		x:5, y:6, z: 7
 
 	'''
+	
+	for x in D:
+		
+		####### find a way to increment x through the loop 
+
+			if len(x) == 3:
+				return "x: {}, y: {}, z: {}".format(*x)
+
+			elif len(x) == 2:
+				return "x: {}, y: {}".format(*x)
+
+			elif len(x) == 1:
+				return "x: {}".format(*x)
+
+			else:
+					return "There's nothing to output"
+
+
+print all_add([(10,20,30), (11, 40), (60), (5, 6, 7)])
 
 
 
 
-f = [(10,20,30), (11, 40), (60), (5, 6, 7)]
 
 
