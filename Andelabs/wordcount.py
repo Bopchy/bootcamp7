@@ -1,4 +1,4 @@
-wordslist = wordlst.split()
+wordslist = wordslist.split()
 
 dict_ = {}
 
