@@ -1,7 +1,7 @@
 def data_type(A=None):
 	if type(A) == str:
 		return len(A)
-	if type(A) == None:
+	if A == None:
 		return "no value"  
 	if type(A) == bool:
 		return A
@@ -12,9 +12,9 @@ def data_type(A=None):
 			return "less than 100"
 		return "more than 100"
 	if type(A) == list:
-		if len(A) >= 3:
-			return A[2]
-		return "None"
+		if len(A) <= 2:
+			return None
+		return A[2]
 
 print data_type()
 print data_type([1, 2, 3])
